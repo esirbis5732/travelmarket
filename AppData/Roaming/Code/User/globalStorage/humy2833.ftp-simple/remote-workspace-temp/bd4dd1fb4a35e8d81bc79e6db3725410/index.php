@@ -200,7 +200,7 @@ $APPLICATION->SetAdditionalCSS("/local/templates/general_2/js/owl.carousel.css")
 				</div>
 				<div class="pretext_countries_item">
 					<a href="/autumn/baikal/">
-						<img src="<?=SITE_TEMPLATE_PATH?>/img/hotels_background_big_thai.png" alt=""> 
+						<img src="<?=SITE_TEMPLATE_PATH?>/img/israel_small.png" alt=""> 
 						<h3>Озеро Байкал</h3>
 					</a>					
 				</div>
