@@ -95,6 +95,7 @@ $this->setFrameMode(true);
 <?if($arParams["DISPLAY_BOTTOM_PAGER"]):?>
 	<br /><?=$arResult["NAV_STRING"]?>
 <?endif;?>
+<div id="Razrabotka"><p>Извините, раздел находится в разработке</p></div>
 </div>
 <script src="https://cdn.rawgit.com/briangonzalez/rgbaster.js/b2fb235b/rgbaster.min.js"></script>
 <script> 
@@ -154,6 +155,17 @@ $(".news_preview_text").dotdotdot({
                             }else{
                                 //скрыываем
                                 $(this).parent().parent().attr('style','display:none;');
+                            }
+
+						});
+						$('#Razrabotka').each(function () {
+                            if($(this).html().indexOf(data['NAME'])>-1){
+                                //скрыываем
+                                $(this).parent().parent().attr('style','display:none;');
+                            }else{
+								//оставляем
+                                $(this).parent().parent().removeAttr('style');
+                                
                             }
 
 						});
